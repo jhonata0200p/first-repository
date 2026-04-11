@@ -13,8 +13,8 @@
         <ul class="navegacion">
           <li><a href="index.html">Home</a></li>
           <li><a href="#about">About</a></li>
-          <li><a>Projects</a></li>
-          <li><a>Contact</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact_me">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -51,11 +51,11 @@
     </section>
 
     <section id="projects">
-      <h2>Lastest Projects</h2>
-      <div class="project-container-2">
-        <figure class="project-box">
+      <h2>Lastest <span>Projects</span></h2>
+      <div class="project-container     ">
+        <article class="project-box">
           <img src="./images/2.webp" alt="ejemplo 1" />
-          <div>
+          <div class="project-content">
             <h3>Seo</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero,
@@ -63,13 +63,13 @@
               consequuntur magnam vitae, accusantium sequi? Labore deserunt
               sapiente consectetur similique animi porro illum?
             </p>
-            <a>Review project</a>
+            <a class="btn-project">Review project</a>
           </div>
-        </figure>
+        </article>
 
-        <figure class="project-box">
+        <article class="project-box">
           <img src="./images/2.webp" alt="ejemplo 1" />
-          <div>
+          <div class="project-content">
             <h3>Seo</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
@@ -77,13 +77,13 @@
               Blanditiis nostrum ad dolorem amet vel, facilis est aliquid enim,
               nulla voluptates harum?
             </p>
-            <a>Review project</a>
+            <a class="btn-project" >Review project</a>
           </div>
-        </figure>
+        </article>
 
-        <figure class="project-box">
+        <article class="project-box">
           <img src="./images/3.webp" alt="ejemplo 1" />
-          <div>
+          <div class="project-content">
             <h3>Seo</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
@@ -91,10 +91,22 @@
               Blanditiis nostrum ad dolorem amet vel, facilis est aliquid enim,
               nulla voluptates harum?
             </p>
-            <a>Review project</a>
+            <a class="btn-project" >Review project</a>
           </div>
-        </figure>
+        </article>
       </div>
     </section>
+    <section id="contact_me">
+      <form>
+        <h2>Contact <span>Me</span></h2>
+        <input type="text" id="nombre" name="nombre" placeholder="ingresa tu nombre">
+        <input type="email" id="email" name="email" placeholder="Ingresa tu correo electronico">
+        <textarea type="mensaje-input" id="mensaje" name="mensaje" placeholder="Igresa tu mensaje"></textarea>
+        <button type="button" id="btn-form">Enviar</button>
+      </form>
+    </section>
   </body>
+  <footer>
+    <p>&copy;Mi Portafolio: todos los derechos reservados</p>
+  </footer>
 </html>
