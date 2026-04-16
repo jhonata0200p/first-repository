@@ -102,9 +102,12 @@ nav a.active {
 }
 
 .contendor-home-presentacion {
+  display: flex;
+  flex-direction: column;
   width: 700px;
   margin-right: 100px;
   animation: deslizar-i-d 1s ease-out;
+  gap: 15px;
 }
 
 .imagen {
@@ -124,6 +127,8 @@ nav a.active {
   border: none;
   cursor: pointer;
   font-size: 16px;
+  width: 150px;
+  margin-top: 20px;
 }
 
 .btn_home:active,
@@ -146,6 +151,7 @@ nav a.active {
 
 #about h3 {
   font-size: 30px;
+  margin-top: 30px;
 }
 #about span {
   color: var(--primary-color);
@@ -161,11 +167,16 @@ nav a.active {
 
 #projects {
   padding-top: 200px;
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-template-rows: 50px 1fr;
+  margin-left: 190px;
 }
 
 #projects h2 {
   font-size: 45px;
-  text-align: center;
+  text-align: center; 
+  grid-column: 2/3;
 }
 
 #projects span,
@@ -173,14 +184,10 @@ nav a.active {
   color: var(--primary-color);
 }
 
-.project-container {
-  display: flex;
-  justify-content: center;
-}
 
 .project-box img {
   height: 500px;
-  width: 300px;
+  width: 100%;
   object-fit: cover;
 }
 
@@ -196,6 +203,23 @@ nav a.active {
   box-shadow: 0px 0px 30px rgba(255, 51, 0, 1);
 }
 
+.container_1 {
+  grid-row:2/3;
+  grid-column: 1/2;
+}
+
+.container_2 {
+  grid-row: 2/3;
+  grid-column: 2/3;
+}
+
+.container_3 {
+  grid-row: 2/3;
+  grid-column: 3/4;
+}
+
+
+
 .project-content {
   position: absolute;
   bottom: 0;
@@ -203,9 +227,14 @@ nav a.active {
   left: 0;
   background-color: rgba(0, 0, 0, 0.7);
   padding: 20px;
-  transform: translateX(100%);
+  transform: translateY(100%);
   transition: 0.5s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
+
+
 
 .project-content h3 {
   font-size: 25px;
@@ -218,6 +247,8 @@ nav a.active {
   border: none;
   cursor: pointer;
   font-size: 13px;
+  width: 150px;
+  text-decoration: none;
 }
 
 .btn-project:active #btn-form:active {
@@ -227,6 +258,8 @@ nav a.active {
 .project-box:hover .project-content {
   transform: translateY(0);
 }
+
+
 
 #contact_me {
   display: flex;
@@ -334,4 +367,40 @@ footer {
     height: 150px;
     width: 150px;
   }
+
+  #about {
+    margin:20px;
+    text-align: justify;
+  }
+
+  #about h2 {
+    font-size: 30px;
+  }
+
+   .imagen_about {
+    height: 200px;
+    width: 200px;
+  }
+
+  #projects {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    margin-left: 0;
+  }
+
+  #projects h2 {
+    grid-column: auto;
+  }
+
+  .project-box {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  #contact_me form {
+    width: 70%;
+  }
 }
+
+
