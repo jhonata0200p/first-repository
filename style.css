@@ -71,9 +71,15 @@ header {
   display: flex;
   gap: 50px;
   list-style: none;
-  padding-right: 300px;
+  margin: 300px;
   font-size: 22px;
   font-weight: bold;
+}
+
+#contenedor-menu {
+  display: none;
+  height: 35px;
+  width: 35px;
 }
 
 nav a {
@@ -98,7 +104,8 @@ nav a:hover::after {
   left: 0;
 }
 
-nav a.active, nav a:hover{
+nav a.active,
+nav a:hover {
   color: rgb(255, 51, 0);
 }
 
@@ -191,7 +198,7 @@ nav a.active, nav a:hover{
 
 #projects h2 {
   font-size: 45px;
-  text-align: center; 
+  text-align: center;
   grid-column: 2/3;
 }
 
@@ -199,7 +206,6 @@ nav a.active, nav a:hover{
 #contact_me span {
   color: var(--primary-color);
 }
-
 
 .project-box img {
   height: 500px;
@@ -219,23 +225,6 @@ nav a.active, nav a:hover{
   box-shadow: 0px 0px 30px rgba(255, 51, 0, 1);
 }
 
-.container_1 {
-  grid-row:2/3;
-  grid-column: 1/2;
-}
-
-.container_2 {
-  grid-row: 2/3;
-  grid-column: 2/3;
-}
-
-.container_3 {
-  grid-row: 2/3;
-  grid-column: 3/4;
-}
-
-
-
 .project-content {
   position: absolute;
   bottom: 0;
@@ -250,7 +239,20 @@ nav a.active, nav a:hover{
   gap: 15px;
 }
 
+.container_1 {
+  grid-row: 2/3;
+  grid-column: 1/2;
+}
 
+.container_2 {
+  grid-row: 2/3;
+  grid-column: 2/3;
+}
+
+.container_3 {
+  grid-row: 2/3;
+  grid-column: 3/4;
+}
 
 .project-content h3 {
   font-size: 25px;
@@ -272,10 +274,8 @@ nav a.active, nav a:hover{
 }
 
 .project-box:hover .project-content {
-  transform: translateY(0);
+  transform: translateY(0%);
 }
-
-
 
 #contact_me {
   display: flex;
@@ -342,17 +342,43 @@ footer {
     padding: 5px;
   }
 
-  header {
+  .navegacion {
+    position: fixed;
     display: flex;
-    flex-wrap: wrap;
-    height: 25vh;
+    align-items: center;
+    top: 13%;
+    right: 0;
+    height: 100%;
+    flex-direction: column;
+    width: 0%;
+    margin: 0;
+    background-color: black;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.5s ease-in-out;
+    padding-top: 14%;
   }
 
-  .navegacion {
-    padding: 0px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  .active .navegacion {
+    opacity: 1;
+    width: 100%;
+    pointer-events: all;
+  }
+
+  .menu-close {
+    display: none;
+  }
+
+  .active .menu-open {
+    display: none;
+  }
+
+  .active .menu-close {
+    display: block;
+  }
+
+  #contenedor-menu {
+    display: block;
   }
 
   .nombre_header {
@@ -385,7 +411,7 @@ footer {
   }
 
   #about {
-    margin:20px;
+    margin: 20px;
     text-align: justify;
   }
 
@@ -393,7 +419,7 @@ footer {
     font-size: 30px;
   }
 
-   .imagen_about {
+  .imagen_about {
     height: 200px;
     width: 200px;
   }
@@ -418,5 +444,3 @@ footer {
     width: 70%;
   }
 }
-
-

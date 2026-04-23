@@ -7,9 +7,9 @@
     <title>Jhonatan</title>
   </head>
   <body>
-    <header>
+    <header class="head">
       <h2 class="nombre_header"><span class="letra">J</span>honatan</h2>
-      <nav>
+      <nav class="contenedor-nav">
         <ul class="navegacion">
           <li><a href="index.html">Home</a></li>
           <li><a href="#about">About</a></li>
@@ -17,6 +17,37 @@
           <li><a href="#contact_me">Contact</a></li>
         </ul>
       </nav>
+      <figure id="contenedor-menu">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="menu-open"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+          />
+        </svg>
+
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="menu-close"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M6 18 18 6M6 6l12 12"
+          />
+        </svg>
+      </figure>
     </header>
     <section id="home">
       <div class="contendor-home-presentacion">
@@ -33,7 +64,7 @@
         <img src="./images/1.webp" class="imagen" alt="foto de ejemplo" />
       </figure>
     </section>
-    
+
     <section id="about">
       <h2>About <span>Me</span></h2>
       <figure>
@@ -53,48 +84,49 @@
 
     <section id="projects">
       <h2>Lastest <span>Projects</span></h2>
-        <article class="project-box container_1">
-          <img src="./images/2.webp" alt="ejemplo 1" />
-          <div class="project-content">
-            <h3>Seo</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero,
-              numquam animi iste voluptas, est nesciunt voluptatem provident
-              consequuntur magnam vitae, accusantium sequi? Labore deserunt
-              sapiente consectetur similique animi porro illum?
-            </p>
-            <a class="btn-project">Review project</a>
-          </div>
-        </article>
+      <article class="project-box container_1">
+        <img src="./images/2.webp" alt="ejemplo 1" />
+        <div class="project-content">
+          <h3>Seo</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero,
+            numquam animi iste voluptas, est nesciunt voluptatem provident
+            consequuntur magnam vitae, accusantium sequi? Labore deserunt
+            sapiente consectetur similique animi porro illum?
+          </p>
+          <a class="btn-project">Review project</a>
+        </div>
+      </article>
 
-        <article class="project-box container_2">
-          <img src="./images/2.webp" alt="ejemplo 1" />
-          <div class="project-content">
-            <h3>Seo</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
-              mollitia optio enim delectus repudiandae qui, amet possimus!
-              Blanditiis nostrum ad dolorem amet vel, facilis est aliquid enim,
-              nulla voluptates harum?
-            </p>
-            <a class="btn-project">Review project</a>
-          </div>
-        </article>
+      <article class="project-box container_2">
+        <img src="./images/2.webp" alt="ejemplo 1" />
+        <div class="project-content">
+          <h3>Seo</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
+            mollitia optio enim delectus repudiandae qui, amet possimus!
+            Blanditiis nostrum ad dolorem amet vel, facilis est aliquid enim,
+            nulla voluptates harum?
+          </p>
+          <a class="btn-project">Review project</a>
+        </div>
+      </article>
 
-        <article class="project-box container_3">
-          <img src="./images/3.webp" alt="ejemplo 1" />
-          <div class="project-content">
-            <h3>Seo</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
-              mollitia optio enim delectus repudiandae qui, amet possimus!
-              Blanditiis nostrum ad dolorem amet vel, facilis est aliquid enim,
-              nulla voluptates harum?
-            </p>
-            <a class="btn-project" href="./mascotas.html" target="_blank">Review project</a>
-          </div>
-        </article>
-      
+      <article class="project-box container_3">
+        <img src="./images/3.webp" alt="ejemplo 1" />
+        <div class="project-content">
+          <h3>Seo</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
+            mollitia optio enim delectus repudiandae qui, amet possimus!
+            Blanditiis nostrum ad dolorem amet vel, facilis est aliquid enim,
+            nulla voluptates harum?
+          </p>
+          <a class="btn-project" href="./mascotas.html" target="_blank"
+            >Review project</a
+          >
+        </div>
+      </article>
     </section>
     <section id="contact_me">
       <form>
@@ -123,5 +155,6 @@
     <footer>
       <p>&copy;Mi Portafolio: todos los derechos reservados</p>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
