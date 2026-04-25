@@ -14,6 +14,8 @@ html {
   scroll-behavior: smooth;
 }
 
+/* animaciones */
+
 @keyframes deslizar-d-i {
   from {
     transform: translateX(100vw);
@@ -37,6 +39,8 @@ body {
   padding: 3.1rem;
   overflow-x: hidden;
 }
+
+/* header*/
 
 header {
   display: flex;
@@ -70,6 +74,8 @@ header {
   transition: 0.5s ease;
   cursor: pointer;
 }
+
+/* Menu de navegacion*/
 
 .navegacion {
   display: flex;
@@ -111,6 +117,8 @@ nav a.active,
 nav a:hover {
   color: rgb(255, 51, 0);
 }
+
+/* seccion home */
 
 #home {
   display: flex;
@@ -162,6 +170,8 @@ nav a:hover {
   background-color: rgb(179, 37, 2);
 }
 
+/* seccion about */
+
 #about {
   display: flex;
   flex-direction: column;
@@ -190,6 +200,8 @@ nav a:hover {
   border-radius: 50%;
   box-shadow: 10px 10px 50px rgba(255, 51, 0, 1);
 }
+
+/* seccion proyectos */
 
 #projects {
   padding-top: 200px;
@@ -280,6 +292,8 @@ nav a:hover {
   transform: translateY(0%);
 }
 
+/* seccion formulario*/
+
 #contact_me {
   display: flex;
   justify-content: center;
@@ -340,7 +354,9 @@ footer {
   margin-top: 50px;
 }
 
-@media (min-width: 751px) and (max-width: 990px) {
+/* portatil*/
+
+@media (min-width: 900px) and (max-width: 1300px) {
   #projects {
     margin-left: 0;
     grid-template-columns: repeat(3, 1fr);
@@ -351,6 +367,22 @@ footer {
     margin: 10px;
   }
 }
+
+/* tablets */
+
+@media (min-width: 751px) and (max-width: 900px) {
+  #projects {
+    margin-left: 0;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100px 1fr;
+  }
+
+  .project-box {
+    margin: 10px;
+  }
+}
+
+/* telefonos */
 
 @media (max-width: 750px) {
   body {

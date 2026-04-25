@@ -6,7 +6,7 @@
 }
 
 body {
-  padding: 100px;
+  padding: 0px 100px 30px 0px;
 }
 
 header {
@@ -35,6 +35,7 @@ section {
   gap: 10px;
   text-align: justify;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+  margin-bottom: 50px;
 }
 
 img {
@@ -51,6 +52,29 @@ img {
 .contenedor-2 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr 30px;
+  grid-template-rows: 1fr 50px;
   justify-items: center;
+}
+
+.btn-portafolio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  background: rgb(19, 139, 175);
+  width: 100px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+.btn-portafolio:hover {
+  background-color: rgb(8, 79, 100);
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
 }
