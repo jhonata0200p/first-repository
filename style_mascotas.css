@@ -5,6 +5,10 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+  padding: 100px;
+}
+
 header {
   display: flex;
   justify-content: center;
@@ -17,7 +21,8 @@ header {
 
 section {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  gap: 100px;
 }
 
 .contenedor-card {
@@ -36,4 +41,16 @@ img {
   height: 200px;
   width: 200px;
   object-fit: cover;
+}
+
+.contenedor-1 {
+  display: flex;
+  justify-content: space-around;
+}
+
+.contenedor-2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 30px;
+  justify-items: center;
 }
