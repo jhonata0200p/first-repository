@@ -354,6 +354,35 @@ footer {
   margin-top: 50px;
 }
 
+.tabla {
+  width: 100%;
+  border-collapse: collapse; /* Evita que los bordes se vean dobles */
+  margin: 20px 0;
+  box-shadow: var(--primary-color);
+}
+
+th,
+td {
+  padding: 12px 15px; /* Espacio interno de las celdas */
+  text-align: center;
+  border-bottom: 1px solid #ddd; /* Línea divisoria */
+}
+
+th {
+  background: var(--primary-color);
+  text-transform: uppercase;
+}
+
+/* Efecto hover: resalta la fila al pasar el mouse */
+tr:hover {
+  background-color: #e9f5f9;
+}
+
+.fa-brands {
+  height: 50px;
+  width: 50px;
+}
+
 /* portatil*/
 
 @media (min-width: 900px) and (max-width: 1300px) {
