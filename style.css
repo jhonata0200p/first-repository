@@ -383,6 +383,10 @@ tr:hover {
   width: 50px;
 }
 
+ul {
+  list-style-image: url("tu-icono-pequeno.png");
+}
+
 /* portatil*/
 
 @media (min-width: 900px) and (max-width: 1300px) {
